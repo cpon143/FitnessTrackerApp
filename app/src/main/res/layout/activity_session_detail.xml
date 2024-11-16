@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_activity_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Name"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_calories_burned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calories Burned: 0.0 kcal"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Duration: 0 min 0 sec"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weight: 0.0 kg"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_session_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Session Date: 01/01/2024"
+        android:textSize="18sp" />
+</LinearLayout>

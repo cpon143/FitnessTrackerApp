@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp"
+    tools:context=".CustomWorkoutsActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Workouts"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:id="@+id/et_workout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Workout Name"
+        android:background="@drawable/input_background"
+        android:padding="16dp"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/baseline_drive_file_rename_outline_24" />
+
+    <EditText
+        android:id="@+id/et_workout_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Workout Description"
+        android:background="@drawable/input_background"
+        android:padding="16dp"
+        android:layout_below="@id/et_workout_name"
+        android:layout_marginTop="12dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/baseline_description_24" />
+
+    <Button
+        android:id="@+id/btn_save_workout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Workout"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/et_workout_description"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/btn_view_workouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Saved Workouts"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/btn_save_workout"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        android:elevation="4dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_view_workouts"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/layout_workout_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_programming_languages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:clipToPadding="false"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

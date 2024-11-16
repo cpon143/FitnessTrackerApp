@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".CyclingActivity">
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="48sp"
+        android:textColor="@color/primary_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/chronometer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:textColor="@color/primary_text"
+            android:background="@drawable/button_background" />
+
+        <Button
+            android:id="@+id/btn_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause"
+            android:textColor="@color/primary_text"
+            android:background="@drawable/button_background"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:textColor="@color/primary_text"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/chronometer"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/achivement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btn_stop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+    <Button
+        android:id="@+id/btn_view_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_stop"
+        android:text="View Distance"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+        <Button
+        android:id="@+id/achievement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_stop"
+        android:text="Achievement"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="openGamification"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance: 0.00 km"
+        android:textSize="24sp"
+        android:textColor="@color/primary_text"
+        android:layout_below="@id/achivement"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn_show_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show History"
+        android:layout_below="@id/tv_distance"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_show_history"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:padding="16dp"
+            android:layout_gravity="center"/>
+    </ScrollView>
+</RelativeLayout>

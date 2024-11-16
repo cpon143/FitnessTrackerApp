@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/runningTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Running Tracker"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"/>
+
+    <!-- Timer Display -->
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="70sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_below="@id/runningTitle"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"/>
+
+    <!-- Distance Tracker -->
+    <TextView
+        android:id="@+id/distanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance: 0.0 km"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_below="@id/timerText"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Calories Burned Tracker -->
+    <TextView
+        android:id="@+id/caloriesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories: 0 kcal"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_below="@id/distanceText"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Progress Bar for Real-time Update -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/caloriesText"
+        android:layout_marginTop="32dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progress_bar_style"/>
+
+    <!-- Button Container for Start, Stop, and Reset Buttons -->
+    <LinearLayout
+        android:id="@+id/startStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Start Button -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/startButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_play_circle_24"
+            android:background="@drawable/button_background"
+            android:padding="8dp"
+            android:layout_marginEnd="20dp"/>
+
+        <!-- Stop Button -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/stopButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_stop_circle_24"
+            android:background="@drawable/button_background"
+            android:padding="8dp"
+            android:visibility="gone"
+            android:layout_marginEnd="20dp"/>
+
+        <!-- Reset Button -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/resetButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_refresh_24"
+            android:background="@drawable/button_background"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- Show History Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/showHistoryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show History"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/startStop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"/>
+
+    <!-- RecyclerView for Workout History -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/showHistoryButton"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

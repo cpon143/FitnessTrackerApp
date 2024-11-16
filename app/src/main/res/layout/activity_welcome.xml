@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_orange">
+
+    <ImageView
+        android:id="@+id/iv_person"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/main1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lets Start Your Habits"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_person"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track your fitness journey, stay motivated and\nreach your goals. Let's crush this together!"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_heading"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btn_start_now"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="START NOW"
+        android:backgroundTint="@color/orange"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btn_start_now"
+        android:layout_alignStart="@+id/btn_start_now"
+        android:layout_alignEnd="@+id/btn_start_now"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginEnd="-51dp"
+        android:text="Design By Md Mazharul Haque"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

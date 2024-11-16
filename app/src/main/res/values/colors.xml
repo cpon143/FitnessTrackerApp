@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_gray">#808080</color>
+    <color name="orange">#FFA500</color>
+    <color name="background_orange">#FFA5FF</color>
+
+    <!-- Premium Background Color -->
+    <color name="premiumBackground">#303F9F</color>
+
+    <!-- Text Colors -->
+    <color name="primary_text">#FFFFFF</color> <!-- White text -->
+    <color name="secondary_text">#BDBDBD</color> <!-- Light gray text -->
+    <color name="highlight_text">#FFEB3B</color> <!-- Bright yellow for highlights -->
+
+    <!-- Button Colors -->
+    <color name="button_pressed">#FF81C784</color> <!-- Light green -->
+    <color name="button_default">#FF4CAF50</color> <!-- Green -->
+    <color name="button_disabled">#FFBDBDBD</color> <!-- Light gray for disabled buttons -->
+
+    <!-- Accent Colors -->
+    <color name="accent_color">#FF4081</color> <!-- Pink accent -->
+    <color name="info_color">#2196F3</color> <!-- Blue for informational elements -->
+    <color name="warning_color">#FF9800</color> <!-- Orange for warnings -->
+    <color name="success_color">#4CAF50</color> <!-- Green for success messages -->
+
+    <!-- Define colors for the selected and unselected tabs -->
+    <color name="selectedTabColor">#FF6A00</color> <!-- Orange for selected -->
+    <color name="unselectedTabColor">#888888</color> <!-- Gray for unselected -->
+
+    <!-- Background Colors -->
+    <color name="background_light">#F5F5F5</color> <!-- Light gray background -->
+    <color name="background_dark">#212121</color> <!-- Dark background for premium feel -->
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Shadow -->
+    <solid android:color="#FFFFFF"/> <!-- Background color (white) -->
+    <corners android:radius="16dp"/> <!-- Border radius -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp"/>
+
+    <gradient
+        android:angle="45"
+        android:startColor="#00BCD4"
+        android:centerColor="#4CAF50"
+        android:endColor="#009688"
+        android:type="linear" />
+
+    <!-- Shadow effect -->
+    <elevation android:value="4dp"/> <!-- Shadow effect (for modern devices) -->
+
+
+</shape>

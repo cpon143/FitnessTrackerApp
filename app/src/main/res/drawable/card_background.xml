@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background with semi-transparent white to simulate frosted glass -->
+    <item android:drawable="@android:color/transparent"/> <!-- Transparent layer for the background -->
+
+    <!-- Semi-transparent white layer to simulate the glass effect -->
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#AAFFFFFF"/> <!-- Semi-transparent white color -->
+            <corners android:radius="16dp"/> <!-- Border radius for rounded corners -->
+            <padding
+                android:left="8dp"
+                android:top="8dp"
+                android:right="8dp"
+                android:bottom="8dp"/> <!-- Padding for the content -->
+        </shape>
+    </item>
+
+    <!-- Shadow effect for depth -->
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#AFAFAF"/> <!-- Light grey color for shadow -->
+            <corners android:radius="16dp"/> <!-- Matching border radius for shadow -->
+            <elevation android:value="4dp"/> <!-- Shadow elevation for modern devices -->
+        </shape>
+    </item>
+</layer-list>
